@@ -67,6 +67,18 @@
     <Compile Include="FormPrincipal.Designer.cs">
       <DependentUpon>FormPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmInventarioAlimentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInventarioAlimentos.Designer.cs">
+      <DependentUpon>frmInventarioAlimentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMovimientosAlimentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMovimientosAlimentos.Designer.cs">
+      <DependentUpon>frmMovimientosAlimentos.cs</DependentUpon>
+    </Compile>
     <Compile Include="InstaladorBD.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -98,6 +110,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormPrincipal.resx">
       <DependentUpon>FormPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInventarioAlimentos.resx">
+      <DependentUpon>frmInventarioAlimentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMovimientosAlimentos.resx">
+      <DependentUpon>frmMovimientosAlimentos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="InstaladorBD.resx">
       <DependentUpon>InstaladorBD.cs</DependentUpon>

@@ -33,7 +33,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnCerrar = new System.Windows.Forms.PictureBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btnActualizarGrado = new System.Windows.Forms.Button();
@@ -46,11 +45,14 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.cboTurno = new System.Windows.Forms.ComboBox();
+            this.btnCerrar = new System.Windows.Forms.PictureBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.dgvDatosGrados = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
+            this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDatosGrados)).BeginInit();
             this.SuspendLayout();
             // 
@@ -60,15 +62,6 @@
             this.panel1.Controls.Add(this.btnCerrar);
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
-            // 
-            // btnCerrar
-            // 
-            resources.ApplyResources(this.btnCerrar, "btnCerrar");
-            this.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCerrar.Image = global::Sistema_de_Alimentos.Properties.Resources.Close;
-            this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.TabStop = false;
-            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
             // comboBox1
             // 
@@ -117,7 +110,6 @@
             // groupBox1
             // 
             resources.ApplyResources(this.groupBox1, "groupBox1");
-            this.groupBox1.Controls.Add(this.dgvDatosGrados);
             this.groupBox1.Controls.Add(this.cboTurno);
             this.groupBox1.Controls.Add(this.dtpInicioClases);
             this.groupBox1.Controls.Add(this.txtGrado);
@@ -165,6 +157,23 @@
             resources.GetString("cboTurno.Items1")});
             this.cboTurno.Name = "cboTurno";
             // 
+            // btnCerrar
+            // 
+            resources.ApplyResources(this.btnCerrar, "btnCerrar");
+            this.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCerrar.Image = global::Sistema_de_Alimentos.Properties.Resources.Close;
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.TabStop = false;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
+            // 
+            // groupBox3
+            // 
+            resources.ApplyResources(this.groupBox3, "groupBox3");
+            this.groupBox3.Controls.Add(this.dgvDatosGrados);
+            this.groupBox3.ForeColor = System.Drawing.Color.White;
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.TabStop = false;
+            // 
             // dgvDatosGrados
             // 
             this.dgvDatosGrados.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
@@ -208,6 +217,7 @@
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
+            this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.btnActualizarGrado);
             this.Controls.Add(this.btnCrearGrado);
             this.Controls.Add(this.btnEliminarGrado);
@@ -221,10 +231,11 @@
             this.Leave += new System.EventHandler(this.frmCrearGrado_Leave);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
+            this.groupBox3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDatosGrados)).EndInit();
             this.ResumeLayout(false);
 
@@ -246,6 +257,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cboTurno;
+        private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.DataGridView dgvDatosGrados;
     }
 }

@@ -184,7 +184,8 @@ namespace Sistema_de_Alimentos
 
         private void button7_Click(object sender, EventArgs e)
         {
-
+            AbrirFormulario<frmMovimientosAlimentos>();
+            movimientoLight.BackColor = Color.FromArgb(54, 127, 169);
         }
 
         private void btnAlimentosDesplegable_Click(object sender, EventArgs e)
@@ -293,6 +294,14 @@ namespace Sistema_de_Alimentos
                 estudiantesLight.BackColor = Color.FromArgb(34, 45, 50);
             }
             if (Application.OpenForms["frmCrearGrado"] == null)
+            {
+                gestionLight.BackColor = Color.FromArgb(34, 45, 50);
+            }
+            if (Application.OpenForms["frmInventarioAlimentos"] == null)
+            {
+                gestionLight.BackColor = Color.FromArgb(34, 45, 50);
+            }
+            if (Application.OpenForms["frmMovimientoAlimentos"] == null)
             {
                 gestionLight.BackColor = Color.FromArgb(34, 45, 50);
             }

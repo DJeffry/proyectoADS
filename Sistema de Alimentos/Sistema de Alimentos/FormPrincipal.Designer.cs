@@ -37,10 +37,10 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.toggler = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.btnMessages = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
+            this.botonSettings = new System.Windows.Forms.Button();
             this.panelMenu = new System.Windows.Forms.Panel();
             this.panelGradosDesplegable = new System.Windows.Forms.Panel();
             this.panel24 = new System.Windows.Forms.Panel();
@@ -62,28 +62,28 @@
             this.button5 = new System.Windows.Forms.Button();
             this.panel10 = new System.Windows.Forms.Panel();
             this.button6 = new System.Windows.Forms.Button();
-            this.panel11 = new System.Windows.Forms.Panel();
+            this.gradosLight = new System.Windows.Forms.Panel();
             this.panelMenuAlimentosDesplegable = new System.Windows.Forms.Panel();
             this.panel16 = new System.Windows.Forms.Panel();
             this.button11 = new System.Windows.Forms.Button();
             this.panel17 = new System.Windows.Forms.Panel();
             this.button12 = new System.Windows.Forms.Button();
-            this.panel18 = new System.Windows.Forms.Panel();
+            this.inventarioLight = new System.Windows.Forms.Panel();
             this.panel13 = new System.Windows.Forms.Panel();
             this.btnInforme = new System.Windows.Forms.Button();
             this.panel14 = new System.Windows.Forms.Panel();
             this.button10 = new System.Windows.Forms.Button();
-            this.panel15 = new System.Windows.Forms.Panel();
+            this.movimientoLight = new System.Windows.Forms.Panel();
             this.panelBotonAlimentos = new System.Windows.Forms.Panel();
             this.btnAlimentosDesplegable = new System.Windows.Forms.Button();
             this.panel8 = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
-            this.panel9 = new System.Windows.Forms.Panel();
+            this.alimentosLight = new System.Windows.Forms.Panel();
             this.PanelBotonInicio = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
-            this.panel6 = new System.Windows.Forms.Panel();
+            this.inicioLight = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -105,7 +105,7 @@
             this.panel12.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.toggler)).BeginInit();
             this.panelMenu.SuspendLayout();
             this.panelGradosDesplegable.SuspendLayout();
             this.panel24.SuspendLayout();
@@ -242,27 +242,27 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(141)))), ((int)(((byte)(188)))));
-            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.toggler);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.btnMessages);
-            this.panel1.Controls.Add(this.button8);
+            this.panel1.Controls.Add(this.botonSettings);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(225, 22);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(715, 47);
             this.panel1.TabIndex = 2;
             // 
-            // pictureBox1
+            // toggler
             // 
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.Image = global::Sistema_de_Alimentos.Properties.Resources.menu;
-            this.pictureBox1.Location = new System.Drawing.Point(6, 6);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(41, 35);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.toggler.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.toggler.Image = global::Sistema_de_Alimentos.Properties.Resources.menu;
+            this.toggler.Location = new System.Drawing.Point(6, 6);
+            this.toggler.Name = "toggler";
+            this.toggler.Size = new System.Drawing.Size(41, 35);
+            this.toggler.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.toggler.TabIndex = 2;
+            this.toggler.TabStop = false;
+            this.toggler.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // label4
             // 
@@ -294,20 +294,20 @@
             this.btnMessages.Visible = false;
             this.btnMessages.Click += new System.EventHandler(this.btnMessages_Click);
             // 
-            // button8
+            // botonSettings
             // 
-            this.button8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button8.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button8.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(141)))), ((int)(((byte)(188)))));
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Font = new System.Drawing.Font("Font Awesome 5 Free Solid", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.ForeColor = System.Drawing.Color.White;
-            this.button8.Location = new System.Drawing.Point(674, 0);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(41, 47);
-            this.button8.TabIndex = 1;
-            this.button8.Text = "";
-            this.button8.UseVisualStyleBackColor = true;
+            this.botonSettings.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.botonSettings.Dock = System.Windows.Forms.DockStyle.Right;
+            this.botonSettings.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(141)))), ((int)(((byte)(188)))));
+            this.botonSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.botonSettings.Font = new System.Drawing.Font("Font Awesome 5 Free Solid", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.botonSettings.ForeColor = System.Drawing.Color.White;
+            this.botonSettings.Location = new System.Drawing.Point(674, 0);
+            this.botonSettings.Name = "botonSettings";
+            this.botonSettings.Size = new System.Drawing.Size(41, 47);
+            this.botonSettings.TabIndex = 1;
+            this.botonSettings.Text = "";
+            this.botonSettings.UseVisualStyleBackColor = true;
             // 
             // panelMenu
             // 
@@ -527,7 +527,7 @@
             this.panelBotonGrados.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(45)))), ((int)(((byte)(50)))));
             this.panelBotonGrados.Controls.Add(this.button5);
             this.panelBotonGrados.Controls.Add(this.panel10);
-            this.panelBotonGrados.Controls.Add(this.panel11);
+            this.panelBotonGrados.Controls.Add(this.gradosLight);
             this.panelBotonGrados.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelBotonGrados.Location = new System.Drawing.Point(0, 286);
             this.panelBotonGrados.Name = "panelBotonGrados";
@@ -576,14 +576,14 @@
             this.button6.Text = "";
             this.button6.UseVisualStyleBackColor = false;
             // 
-            // panel11
+            // gradosLight
             // 
-            this.panel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(45)))), ((int)(((byte)(50)))));
-            this.panel11.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel11.Location = new System.Drawing.Point(0, 0);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(5, 37);
-            this.panel11.TabIndex = 0;
+            this.gradosLight.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(45)))), ((int)(((byte)(50)))));
+            this.gradosLight.Dock = System.Windows.Forms.DockStyle.Left;
+            this.gradosLight.Location = new System.Drawing.Point(0, 0);
+            this.gradosLight.Name = "gradosLight";
+            this.gradosLight.Size = new System.Drawing.Size(5, 37);
+            this.gradosLight.TabIndex = 0;
             // 
             // panelMenuAlimentosDesplegable
             // 
@@ -600,7 +600,7 @@
             this.panel16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(45)))), ((int)(((byte)(50)))));
             this.panel16.Controls.Add(this.button11);
             this.panel16.Controls.Add(this.panel17);
-            this.panel16.Controls.Add(this.panel18);
+            this.panel16.Controls.Add(this.inventarioLight);
             this.panel16.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel16.Location = new System.Drawing.Point(0, 37);
             this.panel16.Name = "panel16";
@@ -647,21 +647,21 @@
             this.button12.Text = "";
             this.button12.UseVisualStyleBackColor = true;
             // 
-            // panel18
+            // inventarioLight
             // 
-            this.panel18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(45)))), ((int)(((byte)(50)))));
-            this.panel18.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel18.Location = new System.Drawing.Point(0, 0);
-            this.panel18.Name = "panel18";
-            this.panel18.Size = new System.Drawing.Size(5, 37);
-            this.panel18.TabIndex = 0;
+            this.inventarioLight.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(45)))), ((int)(((byte)(50)))));
+            this.inventarioLight.Dock = System.Windows.Forms.DockStyle.Left;
+            this.inventarioLight.Location = new System.Drawing.Point(0, 0);
+            this.inventarioLight.Name = "inventarioLight";
+            this.inventarioLight.Size = new System.Drawing.Size(5, 37);
+            this.inventarioLight.TabIndex = 0;
             // 
             // panel13
             // 
             this.panel13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(45)))), ((int)(((byte)(50)))));
             this.panel13.Controls.Add(this.btnInforme);
             this.panel13.Controls.Add(this.panel14);
-            this.panel13.Controls.Add(this.panel15);
+            this.panel13.Controls.Add(this.movimientoLight);
             this.panel13.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel13.Location = new System.Drawing.Point(0, 0);
             this.panel13.Name = "panel13";
@@ -708,21 +708,21 @@
             this.button10.Text = "";
             this.button10.UseVisualStyleBackColor = true;
             // 
-            // panel15
+            // movimientoLight
             // 
-            this.panel15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(45)))), ((int)(((byte)(50)))));
-            this.panel15.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel15.Location = new System.Drawing.Point(0, 0);
-            this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(5, 37);
-            this.panel15.TabIndex = 0;
+            this.movimientoLight.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(45)))), ((int)(((byte)(50)))));
+            this.movimientoLight.Dock = System.Windows.Forms.DockStyle.Left;
+            this.movimientoLight.Location = new System.Drawing.Point(0, 0);
+            this.movimientoLight.Name = "movimientoLight";
+            this.movimientoLight.Size = new System.Drawing.Size(5, 37);
+            this.movimientoLight.TabIndex = 0;
             // 
             // panelBotonAlimentos
             // 
             this.panelBotonAlimentos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(45)))), ((int)(((byte)(50)))));
             this.panelBotonAlimentos.Controls.Add(this.btnAlimentosDesplegable);
             this.panelBotonAlimentos.Controls.Add(this.panel8);
-            this.panelBotonAlimentos.Controls.Add(this.panel9);
+            this.panelBotonAlimentos.Controls.Add(this.alimentosLight);
             this.panelBotonAlimentos.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelBotonAlimentos.Location = new System.Drawing.Point(0, 174);
             this.panelBotonAlimentos.Name = "panelBotonAlimentos";
@@ -772,21 +772,21 @@
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // panel9
+            // alimentosLight
             // 
-            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(45)))), ((int)(((byte)(50)))));
-            this.panel9.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel9.Location = new System.Drawing.Point(0, 0);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(5, 37);
-            this.panel9.TabIndex = 0;
+            this.alimentosLight.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(45)))), ((int)(((byte)(50)))));
+            this.alimentosLight.Dock = System.Windows.Forms.DockStyle.Left;
+            this.alimentosLight.Location = new System.Drawing.Point(0, 0);
+            this.alimentosLight.Name = "alimentosLight";
+            this.alimentosLight.Size = new System.Drawing.Size(5, 37);
+            this.alimentosLight.TabIndex = 0;
             // 
             // PanelBotonInicio
             // 
             this.PanelBotonInicio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(45)))), ((int)(((byte)(50)))));
             this.PanelBotonInicio.Controls.Add(this.button1);
             this.PanelBotonInicio.Controls.Add(this.panel7);
-            this.PanelBotonInicio.Controls.Add(this.panel6);
+            this.PanelBotonInicio.Controls.Add(this.inicioLight);
             this.PanelBotonInicio.Dock = System.Windows.Forms.DockStyle.Top;
             this.PanelBotonInicio.Location = new System.Drawing.Point(0, 137);
             this.PanelBotonInicio.Name = "PanelBotonInicio";
@@ -834,14 +834,14 @@
             this.button2.Text = "";
             this.button2.UseVisualStyleBackColor = false;
             // 
-            // panel6
+            // inicioLight
             // 
-            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(45)))), ((int)(((byte)(50)))));
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel6.Location = new System.Drawing.Point(0, 0);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(5, 37);
-            this.panel6.TabIndex = 0;
+            this.inicioLight.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(45)))), ((int)(((byte)(50)))));
+            this.inicioLight.Dock = System.Windows.Forms.DockStyle.Left;
+            this.inicioLight.Location = new System.Drawing.Point(0, 0);
+            this.inicioLight.Name = "inicioLight";
+            this.inicioLight.Size = new System.Drawing.Size(5, 37);
+            this.inicioLight.TabIndex = 0;
             // 
             // panel4
             // 
@@ -1040,7 +1040,7 @@
             this.panel5.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.toggler)).EndInit();
             this.panelMenu.ResumeLayout(false);
             this.panelGradosDesplegable.ResumeLayout(false);
             this.panel24.ResumeLayout(false);
@@ -1093,7 +1093,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel PanelBotonInicio;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel inicioLight;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel3;
@@ -1103,25 +1103,25 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Panel panel11;
+        private System.Windows.Forms.Panel gradosLight;
         private System.Windows.Forms.Panel panelBotonAlimentos;
         private System.Windows.Forms.Button btnAlimentosDesplegable;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Panel alimentosLight;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label lblCargo;
         private System.Windows.Forms.Label lbNombreUsuario;
         private System.Windows.Forms.Panel panelMensajes;
         private System.Windows.Forms.Button btnMessages;
-        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button botonSettings;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Panel panel12;
         private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox toggler;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panelGradosDesplegable;
         private System.Windows.Forms.Panel panel22;
@@ -1139,12 +1139,12 @@
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Panel panel17;
         private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.Panel panel18;
+        private System.Windows.Forms.Panel inventarioLight;
         private System.Windows.Forms.Panel panel13;
         private System.Windows.Forms.Button btnInforme;
         private System.Windows.Forms.Panel panel14;
         private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Panel panel15;
+        private System.Windows.Forms.Panel movimientoLight;
         private System.Windows.Forms.Panel panel24;
         private System.Windows.Forms.Button btnGestion;
         private System.Windows.Forms.Panel panel25;
