@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2036
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sistema_de_Alimentos", "Sistema de Alimentos\Sistema_de_Alimentos.csproj", "{4154ABB4-EBE7-40DD-881E-FA95388672D8}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3AFFA6A9-FF6E-463C-AB64-F7DA45370296} = {3AFFA6A9-FF6E-463C-AB64-F7DA45370296}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaNegocio", "CapaNegocio\CapaNegocio.csproj", "{3AFFA6A9-FF6E-463C-AB64-F7DA45370296}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4154ABB4-EBE7-40DD-881E-FA95388672D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4154ABB4-EBE7-40DD-881E-FA95388672D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4154ABB4-EBE7-40DD-881E-FA95388672D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4154ABB4-EBE7-40DD-881E-FA95388672D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3AFFA6A9-FF6E-463C-AB64-F7DA45370296}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AFFA6A9-FF6E-463C-AB64-F7DA45370296}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AFFA6A9-FF6E-463C-AB64-F7DA45370296}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AFFA6A9-FF6E-463C-AB64-F7DA45370296}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6F54B4E8-2BDA-413F-B7BA-AB04F472C47A}
+	EndGlobalSection
+EndGlobal
