@@ -245,6 +245,26 @@ namespace Sistema_de_Alimentos
             gestionLight.BackColor = Color.FromArgb(54, 127, 169);
         }
 
+        private void button11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button16_Click(object sender, EventArgs e)
+        {
+            btnEstudiantes_Click(sender, e);
+        }
+
+        private void btnEncargados_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button7_Click_1(object sender, EventArgs e)
+        {
+            btnGestion_Click(sender, e);
+        }
+
         //carga variables locales
         public static void cargarVariables()
         {

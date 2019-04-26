@@ -43,6 +43,11 @@
             this.button8 = new System.Windows.Forms.Button();
             this.panelMenu = new System.Windows.Forms.Panel();
             this.panelGradosDesplegable = new System.Windows.Forms.Panel();
+            this.panel24 = new System.Windows.Forms.Panel();
+            this.btnGestion = new System.Windows.Forms.Button();
+            this.panel25 = new System.Windows.Forms.Panel();
+            this.button7 = new System.Windows.Forms.Button();
+            this.gestionLight = new System.Windows.Forms.Panel();
             this.panel22 = new System.Windows.Forms.Panel();
             this.btnEstudiantes = new System.Windows.Forms.Button();
             this.panel23 = new System.Windows.Forms.Panel();
@@ -94,11 +99,6 @@
             this.btnRestaurar = new System.Windows.Forms.PictureBox();
             this.btnMaximizar = new System.Windows.Forms.PictureBox();
             this.btnCerrar = new System.Windows.Forms.PictureBox();
-            this.panel24 = new System.Windows.Forms.Panel();
-            this.btnGestion = new System.Windows.Forms.Button();
-            this.panel25 = new System.Windows.Forms.Panel();
-            this.button7 = new System.Windows.Forms.Button();
-            this.gestionLight = new System.Windows.Forms.Panel();
             this.panelContenedor.SuspendLayout();
             this.panelFormularios.SuspendLayout();
             this.panelMensajes.SuspendLayout();
@@ -108,6 +108,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelMenu.SuspendLayout();
             this.panelGradosDesplegable.SuspendLayout();
+            this.panel24.SuspendLayout();
+            this.panel25.SuspendLayout();
             this.panel22.SuspendLayout();
             this.panel23.SuspendLayout();
             this.panel19.SuspendLayout();
@@ -132,8 +134,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnRestaurar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
-            this.panel24.SuspendLayout();
-            this.panel25.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelContenedor
@@ -337,6 +337,68 @@
             this.panelGradosDesplegable.Size = new System.Drawing.Size(225, 115);
             this.panelGradosDesplegable.TabIndex = 10;
             // 
+            // panel24
+            // 
+            this.panel24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(45)))), ((int)(((byte)(50)))));
+            this.panel24.Controls.Add(this.btnGestion);
+            this.panel24.Controls.Add(this.panel25);
+            this.panel24.Controls.Add(this.gestionLight);
+            this.panel24.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel24.Location = new System.Drawing.Point(0, 74);
+            this.panel24.Name = "panel24";
+            this.panel24.Size = new System.Drawing.Size(225, 37);
+            this.panel24.TabIndex = 8;
+            // 
+            // btnGestion
+            // 
+            this.btnGestion.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnGestion.FlatAppearance.BorderSize = 0;
+            this.btnGestion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGestion.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGestion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(199)))), ((int)(((byte)(196)))));
+            this.btnGestion.Location = new System.Drawing.Point(37, 0);
+            this.btnGestion.Name = "btnGestion";
+            this.btnGestion.Size = new System.Drawing.Size(188, 37);
+            this.btnGestion.TabIndex = 0;
+            this.btnGestion.Text = "Gestion";
+            this.btnGestion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGestion.UseVisualStyleBackColor = true;
+            this.btnGestion.Click += new System.EventHandler(this.btnGestion_Click);
+            // 
+            // panel25
+            // 
+            this.panel25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(45)))), ((int)(((byte)(50)))));
+            this.panel25.Controls.Add(this.button7);
+            this.panel25.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel25.Location = new System.Drawing.Point(5, 0);
+            this.panel25.Name = "panel25";
+            this.panel25.Size = new System.Drawing.Size(32, 37);
+            this.panel25.TabIndex = 1;
+            // 
+            // button7
+            // 
+            this.button7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button7.FlatAppearance.BorderSize = 0;
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.Font = new System.Drawing.Font("Font Awesome 5 Free Solid", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(199)))), ((int)(((byte)(196)))));
+            this.button7.Location = new System.Drawing.Point(0, 0);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(32, 37);
+            this.button7.TabIndex = 1;
+            this.button7.Text = "";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click_1);
+            // 
+            // gestionLight
+            // 
+            this.gestionLight.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(45)))), ((int)(((byte)(50)))));
+            this.gestionLight.Dock = System.Windows.Forms.DockStyle.Left;
+            this.gestionLight.Location = new System.Drawing.Point(0, 0);
+            this.gestionLight.Name = "gestionLight";
+            this.gestionLight.Size = new System.Drawing.Size(5, 37);
+            this.gestionLight.TabIndex = 0;
+            // 
             // panel22
             // 
             this.panel22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(45)))), ((int)(((byte)(50)))));
@@ -388,6 +450,7 @@
             this.button16.TabIndex = 1;
             this.button16.Text = "";
             this.button16.UseVisualStyleBackColor = true;
+            this.button16.Click += new System.EventHandler(this.button16_Click);
             // 
             // estudiantesLight
             // 
@@ -424,6 +487,7 @@
             this.btnEncargados.Text = "Encargados";
             this.btnEncargados.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnEncargados.UseVisualStyleBackColor = true;
+            this.btnEncargados.Click += new System.EventHandler(this.btnEncargados_Click);
             // 
             // panel20
             // 
@@ -557,6 +621,7 @@
             this.button11.Text = "Inventario";
             this.button11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // panel17
             // 
@@ -955,67 +1020,6 @@
             this.btnCerrar.TabStop = false;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
-            // panel24
-            // 
-            this.panel24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(45)))), ((int)(((byte)(50)))));
-            this.panel24.Controls.Add(this.btnGestion);
-            this.panel24.Controls.Add(this.panel25);
-            this.panel24.Controls.Add(this.gestionLight);
-            this.panel24.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel24.Location = new System.Drawing.Point(0, 74);
-            this.panel24.Name = "panel24";
-            this.panel24.Size = new System.Drawing.Size(225, 37);
-            this.panel24.TabIndex = 8;
-            // 
-            // btnGestion
-            // 
-            this.btnGestion.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnGestion.FlatAppearance.BorderSize = 0;
-            this.btnGestion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGestion.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGestion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(199)))), ((int)(((byte)(196)))));
-            this.btnGestion.Location = new System.Drawing.Point(37, 0);
-            this.btnGestion.Name = "btnGestion";
-            this.btnGestion.Size = new System.Drawing.Size(188, 37);
-            this.btnGestion.TabIndex = 0;
-            this.btnGestion.Text = "Gestion";
-            this.btnGestion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnGestion.UseVisualStyleBackColor = true;
-            this.btnGestion.Click += new System.EventHandler(this.btnGestion_Click);
-            // 
-            // panel25
-            // 
-            this.panel25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(45)))), ((int)(((byte)(50)))));
-            this.panel25.Controls.Add(this.button7);
-            this.panel25.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel25.Location = new System.Drawing.Point(5, 0);
-            this.panel25.Name = "panel25";
-            this.panel25.Size = new System.Drawing.Size(32, 37);
-            this.panel25.TabIndex = 1;
-            // 
-            // button7
-            // 
-            this.button7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button7.FlatAppearance.BorderSize = 0;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Font Awesome 5 Free Solid", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(199)))), ((int)(((byte)(196)))));
-            this.button7.Location = new System.Drawing.Point(0, 0);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(32, 37);
-            this.button7.TabIndex = 1;
-            this.button7.Text = "";
-            this.button7.UseVisualStyleBackColor = true;
-            // 
-            // gestionLight
-            // 
-            this.gestionLight.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(45)))), ((int)(((byte)(50)))));
-            this.gestionLight.Dock = System.Windows.Forms.DockStyle.Left;
-            this.gestionLight.Location = new System.Drawing.Point(0, 0);
-            this.gestionLight.Name = "gestionLight";
-            this.gestionLight.Size = new System.Drawing.Size(5, 37);
-            this.gestionLight.TabIndex = 0;
-            // 
             // menuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1039,6 +1043,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelMenu.ResumeLayout(false);
             this.panelGradosDesplegable.ResumeLayout(false);
+            this.panel24.ResumeLayout(false);
+            this.panel25.ResumeLayout(false);
             this.panel22.ResumeLayout(false);
             this.panel23.ResumeLayout(false);
             this.panel19.ResumeLayout(false);
@@ -1067,8 +1073,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnRestaurar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
-            this.panel24.ResumeLayout(false);
-            this.panel25.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

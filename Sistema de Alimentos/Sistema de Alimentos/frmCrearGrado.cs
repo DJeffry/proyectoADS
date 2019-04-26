@@ -35,33 +35,38 @@ namespace Sistema_de_Alimentos
             this.Close();
         }
 
+        private int calcLectivos(DateTime d1) {
+            DateTime ahorita = Convert.ToDateTime(DateTime.Today.ToString());
+            int resta = Convert.ToInt32((ahorita - d1).TotalDays);
+            int diasSemana = Convert.ToInt32(resta - DateTime.Now.DayOfWeek) / 7;
+            int lectivos = resta - diasSemana - 1;
+            return lectivos;
+        }
+
         private void btnCrearGrado_Click(object sender, EventArgs e)
         {
-            string theDate = dtpInicioClases.Value.ToString("yyyy-MM-dd");
-            string[] docParametros = new string[3];//creamos el array para mandar parametros
-            //create procedure parvularia.insertarGrado(@grado varchar(255), @turno varchar(50), @lectivos int, @refrigerio int, @inicioClasesdate)as insert into parvularia.grado values(@grado, @turno, @lectivos, @refrigerio, @inicioClases);
-            docParametros[0] = "@grado = '" + txtGrado.Text + "',";
-            docParametros[1] = "@turno = '" + txtTurno.Text + "',";
-            docParametros[2] = "@inicioClases= '" + theDate + "'";
+            DateTime inicio = Convert.ToDateTime(dtpInicioClases.Value.ToString());
+            int lectivos = calcLectivos(inicio);
+            int refrigerio = lectivos;
+             string theDate = dtpInicioClases.Value.ToString("yyyy-MM-dd");
+             string[] docParametros = new string[5];//creamos el array para mandar parametros
+             //create procedure parvularia.insertarGrado(@grado varchar(255), @turno varchar(50), @lectivos int, @refrigerio int, @inicioClasesdate)as insert into parvularia.grado values(@grado, @turno, @lectivos, @refrigerio, @inicioClases);
+             docParametros[0] = "@grado = " + txtGrado.Text;
+             docParametros[1] = "@turno = " + cboTurno.SelectedItem.ToString();
+            docParametros[2] = "@lectivos = " + lectivos.ToString();
+             docParametros[3] = "@refrigerio = " + lectivos.ToString();
+            docParametros[4] = "@inicioClases = " + theDate + "";
 
 
             if (sp.pb(docParametros, "insertarGrado"))//al mandar a llamar la funcion debolverá un valor booleano con eso podemos controlarlo
-            {
-                MenuVertical.errores = "Datos creados correctamente";//si tira true, pondremos que todo esta bien
-                actualizarDatos();//actualizamos el datagrid
-            }
-            else//si tira false, quiere decir que intentamos actualizar los datos por que los datos ya existen
-            {
-                if (sp.pb(docParametros, "actualizarDoctor"))//mandamos a llamar de nuebo el pb, pero en este caso le diremos que queremos actualizar
-                {
-                    MenuVertical.errores = "Datos alterados correctamente";//si tira true diremos que todo esta bien
-                    actualizarDatos();
-                }
-                else
-                {
-                    MenuVertical.errores = "No se alterar alterar los datos, verifique bien los campos";//quiere decir que no estamos enviando bien los parametros
-                }
-            }
+             {
+                MessageBox.Show("Grado creado correctamente", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+             }
+             else//si tira false, quiere decir que intentamos actualizar los datos por que los datos ya existen
+             {
+                    MessageBox.Show("Grado no se pudo crear", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                
+             }
         }
     }
 }

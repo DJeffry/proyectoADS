@@ -87,6 +87,9 @@
     <Compile Include="splashScreen.Designer.cs">
       <DependentUpon>splashScreen.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="frmCrearGrado.es-419.resx">
+      <DependentUpon>frmCrearGrado.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmCrearGrado.resx">
       <DependentUpon>frmCrearGrado.cs</DependentUpon>
     </EmbeddedResource>
