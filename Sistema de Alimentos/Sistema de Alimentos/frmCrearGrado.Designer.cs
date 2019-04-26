@@ -32,16 +32,16 @@
             this.btnCerrar = new System.Windows.Forms.PictureBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.dtpInicioClases = new System.Windows.Forms.DateTimePicker();
+            this.txtTurno = new System.Windows.Forms.TextBox();
+            this.txtGrado = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btnActualizarGrado = new System.Windows.Forms.Button();
             this.btnCrearGrado = new System.Windows.Forms.Button();
             this.btnEliminarGrado = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtGrado = new System.Windows.Forms.TextBox();
-            this.txtTurno = new System.Windows.Forms.TextBox();
-            this.dtpInicioClases = new System.Windows.Forms.DateTimePicker();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -107,6 +107,60 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Formulario";
             // 
+            // dtpInicioClases
+            // 
+            this.dtpInicioClases.Location = new System.Drawing.Point(9, 166);
+            this.dtpInicioClases.MaxDate = new System.DateTime(2019, 4, 25, 0, 0, 0, 0);
+            this.dtpInicioClases.Name = "dtpInicioClases";
+            this.dtpInicioClases.Size = new System.Drawing.Size(445, 22);
+            this.dtpInicioClases.TabIndex = 24;
+            this.dtpInicioClases.Value = new System.DateTime(2019, 4, 25, 0, 0, 0, 0);
+            // 
+            // txtTurno
+            // 
+            this.txtTurno.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtTurno.Location = new System.Drawing.Point(9, 106);
+            this.txtTurno.Name = "txtTurno";
+            this.txtTurno.Size = new System.Drawing.Size(445, 22);
+            this.txtTurno.TabIndex = 23;
+            // 
+            // txtGrado
+            // 
+            this.txtGrado.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtGrado.Location = new System.Drawing.Point(9, 52);
+            this.txtGrado.Name = "txtGrado";
+            this.txtGrado.Size = new System.Drawing.Size(445, 22);
+            this.txtGrado.TabIndex = 22;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(6, 146);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(100, 17);
+            this.label4.TabIndex = 21;
+            this.label4.Text = "Inicio de Clases";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(6, 86);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(39, 17);
+            this.label2.TabIndex = 19;
+            this.label2.Text = "Turno";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(6, 32);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(56, 17);
+            this.label1.TabIndex = 18;
+            this.label1.Text = "Nombre";
+            // 
             // groupBox2
             // 
             this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -163,60 +217,6 @@
             this.btnEliminarGrado.Text = "Eliminar";
             this.btnEliminarGrado.UseVisualStyleBackColor = false;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 32);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(56, 17);
-            this.label1.TabIndex = 18;
-            this.label1.Text = "Nombre";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 86);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(39, 17);
-            this.label2.TabIndex = 19;
-            this.label2.Text = "Turno";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(6, 146);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(100, 17);
-            this.label4.TabIndex = 21;
-            this.label4.Text = "Inicio de Clases";
-            // 
-            // txtGrado
-            // 
-            this.txtGrado.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtGrado.Location = new System.Drawing.Point(9, 52);
-            this.txtGrado.Name = "txtGrado";
-            this.txtGrado.Size = new System.Drawing.Size(445, 22);
-            this.txtGrado.TabIndex = 22;
-            // 
-            // txtTurno
-            // 
-            this.txtTurno.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtTurno.Location = new System.Drawing.Point(9, 106);
-            this.txtTurno.Name = "txtTurno";
-            this.txtTurno.Size = new System.Drawing.Size(445, 22);
-            this.txtTurno.TabIndex = 23;
-            // 
-            // dtpInicioClases
-            // 
-            this.dtpInicioClases.Location = new System.Drawing.Point(9, 166);
-            this.dtpInicioClases.MaxDate = new System.DateTime(2019, 4, 25, 0, 0, 0, 0);
-            this.dtpInicioClases.Name = "dtpInicioClases";
-            this.dtpInicioClases.Size = new System.Drawing.Size(445, 22);
-            this.dtpInicioClases.TabIndex = 24;
-            this.dtpInicioClases.Value = new System.DateTime(2019, 4, 25, 0, 0, 0, 0);
-            // 
             // frmCrearGrado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
@@ -231,7 +231,7 @@
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Century Gothic", 9F);
             this.ForeColor = System.Drawing.Color.White;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "frmCrearGrado";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
