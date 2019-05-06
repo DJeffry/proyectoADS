@@ -2,7 +2,7 @@ create procedure parvularia.SPIniciarSesion(@usuario varchar(50),@pass varchar(5
 create procedure parvularia.verGrado(@id_Grado int)as select * from parvularia.grado	where id_Grado = @id_Grado;
 create procedure parvularia.insertarGrado @grado varchar(255), @turno varchar(50), @lectivos int, @refrigerio int, @inicioClases date as insert into parvularia.grado values(@grado, @turno, @lectivos, @refrigerio, @inicioClases);
 create procedure parvularia.borrarGrado(@id_grado int)as delete from parvularia.grado	where id_Grado = @id_grado;
-create procedure parvularia.modificarGrado(@id_grado int, @grado int, @turno varchar(50), @lectivos int, @refrigerio int, @inicioClases date)as UPDATE parvularia.grado set grado = @grado, turno = @turno, lectivos = @lectivos, refrigerios = @refrigerio, inicioClases = @inicioClases where id_grado = @id_grado;
+create procedure parvularia.modificarGrado(@id_grado int, @grado varchar(225), @turno varchar(50), @lectivos int, @refrigerio int, @inicioClases date)as UPDATE parvularia.grado set grado = @grado, turno = @turno, lectivos = @lectivos, refrigerios = @refrigerio, inicioClases = @inicioClases where id_grado = @id_grado;
 create procedure parvularia.verEstudiante(@id_Estudiante int)as	select * from parvularia.estudiantewhere id_estudiante= @id_Estudiante;
 create procedure parvularia.insertarEstudiante(@nombre varchar(255),@apellido varchar(255), @sexo varchar(50), @fk_Grado int)as insert into parvularia.estudiante values(@nombre, @apellido, @sexo, @fk_Grado);
 create procedure parvularia.borrarEstudiante(@id_estudiante int)as delete from parvularia.estudiante where id_Estudiante = @id_estudiante;

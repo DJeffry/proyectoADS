@@ -68,9 +68,10 @@ namespace CapaNegocio
                 Conexion.cerrarConexion();
                 return true;//si executo el procedimiento con exito devolverá true
             }
-            catch (Exception exe)
+            catch (Exception e)
             {
-                return false;//si executo el procedimiento con exito devolverá true
+                Console.WriteLine("ERROR-------------**[" + e + "]");
+                return false;//retornamos una tabla nula si falla algo
             }
         }
 
@@ -91,8 +92,8 @@ namespace CapaNegocio
             }
             catch (Exception e)
             {
-
-                return null;//si hubo algun error retornará una tabla nula
+                Console.WriteLine("ERROR-------------**[" + e + "]");
+                return null;//retornamos una tabla nula si falla algo
             }
         }
         public DataTable dt(string tabla, string columnas) //sirve obtener todos los datos una tabla de la base de datos para mostrarlos en un datagridview
@@ -143,7 +144,7 @@ namespace CapaNegocio
             }
             catch (Exception e)
             {
-
+                Console.WriteLine("ERROR-------------**[" + e + "]");
                 return null;//retornamos una tabla nula si falla algo
             }
         }
@@ -180,8 +181,8 @@ namespace CapaNegocio
             }
             catch (Exception e)
             {
-
-                return null;//devolvemos null por si falla algo
+                Console.WriteLine("ERROR-------------**[" + e + "]");
+                return null;//retornamos una tabla nula si falla algo
             }
         }
         public List<object[]> list(string tabla) //sirve obtener todos los datos una tabla de la base de datos para mostrarlos en un datagridview
@@ -207,8 +208,8 @@ namespace CapaNegocio
             }
             catch (Exception e)
             {
-
-                return null;//devolvemos null por si falla algo
+                Console.WriteLine("ERROR-------------**[" + e + "]");
+                return null;//retornamos una tabla nula si falla algo
             }
         }
         public List<object[]> list(string tabla, string columnas) //sirve obtener todos los datos una tabla de la base de datos para mostrarlos en un datagridview
@@ -234,8 +235,8 @@ namespace CapaNegocio
             }
             catch (Exception e)
             {
-
-                return null;//devolvemos null por si falla algo
+                Console.WriteLine("ERROR-------------**[" + e + "]");
+                return null;//retornamos una tabla nula si falla algo
             }
         }
     }

@@ -264,7 +264,7 @@ namespace Sistema_de_Alimentos
                 SetText("--[Tabla informe] No se pudo crear");
             }
             SetText("----------Insertando datos de usuario----------");
-            sql = "INSERT INTO parvularia.grado values('Todos',null,null,null,null);INSERT INTO parvularia.encargado values('admin','admin', 'administrador','adminP', 'admin123',1)";
+            sql = "INSERT INTO parvularia.grado values(' ',null,null,null,null);INSERT INTO parvularia.encargado values('admin','admin', 'administrador','adminP', 'admin123',1)";
             SetPorc("19");
             if (exeConexion(sql))
             {
