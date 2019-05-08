@@ -185,7 +185,7 @@ namespace Sistema_de_Alimentos
         private void button7_Click(object sender, EventArgs e)
         {
             AbrirFormulario<frmMovimientosAlimentos>();
-            movimientoLight.BackColor = Color.FromArgb(54, 127, 169);
+            
         }
 
         private void btnAlimentosDesplegable_Click(object sender, EventArgs e)
@@ -248,7 +248,8 @@ namespace Sistema_de_Alimentos
 
         private void button11_Click(object sender, EventArgs e)
         {
-
+            AbrirFormulario<frmInventarioAlimentos>();
+            inventarioLight.BackColor = Color.FromArgb(54, 127, 169);
         }
 
         private void button16_Click(object sender, EventArgs e)
@@ -264,6 +265,11 @@ namespace Sistema_de_Alimentos
         private void button7_Click_1(object sender, EventArgs e)
         {
             btnGestion_Click(sender, e);
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            button7_Click(sender, e);
         }
 
         //carga variables locales

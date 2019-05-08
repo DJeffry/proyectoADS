@@ -69,21 +69,11 @@
             this.panel17 = new System.Windows.Forms.Panel();
             this.button12 = new System.Windows.Forms.Button();
             this.inventarioLight = new System.Windows.Forms.Panel();
-            this.panel13 = new System.Windows.Forms.Panel();
-            this.btnInforme = new System.Windows.Forms.Button();
-            this.panel14 = new System.Windows.Forms.Panel();
-            this.button10 = new System.Windows.Forms.Button();
-            this.movimientoLight = new System.Windows.Forms.Panel();
             this.panelBotonAlimentos = new System.Windows.Forms.Panel();
             this.btnAlimentosDesplegable = new System.Windows.Forms.Button();
             this.panel8 = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
             this.alimentosLight = new System.Windows.Forms.Panel();
-            this.PanelBotonInicio = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
-            this.inicioLight = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -119,12 +109,8 @@
             this.panelMenuAlimentosDesplegable.SuspendLayout();
             this.panel16.SuspendLayout();
             this.panel17.SuspendLayout();
-            this.panel13.SuspendLayout();
-            this.panel14.SuspendLayout();
             this.panelBotonAlimentos.SuspendLayout();
             this.panel8.SuspendLayout();
-            this.PanelBotonInicio.SuspendLayout();
-            this.panel7.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -316,7 +302,6 @@
             this.panelMenu.Controls.Add(this.panelBotonGrados);
             this.panelMenu.Controls.Add(this.panelMenuAlimentosDesplegable);
             this.panelMenu.Controls.Add(this.panelBotonAlimentos);
-            this.panelMenu.Controls.Add(this.PanelBotonInicio);
             this.panelMenu.Controls.Add(this.panel4);
             this.panelMenu.Controls.Add(this.panel3);
             this.panelMenu.Controls.Add(this.panel2);
@@ -332,7 +317,7 @@
             this.panelGradosDesplegable.Controls.Add(this.panel22);
             this.panelGradosDesplegable.Controls.Add(this.panel19);
             this.panelGradosDesplegable.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelGradosDesplegable.Location = new System.Drawing.Point(0, 323);
+            this.panelGradosDesplegable.Location = new System.Drawing.Point(0, 251);
             this.panelGradosDesplegable.Name = "panelGradosDesplegable";
             this.panelGradosDesplegable.Size = new System.Drawing.Size(225, 115);
             this.panelGradosDesplegable.TabIndex = 10;
@@ -529,7 +514,7 @@
             this.panelBotonGrados.Controls.Add(this.panel10);
             this.panelBotonGrados.Controls.Add(this.gradosLight);
             this.panelBotonGrados.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelBotonGrados.Location = new System.Drawing.Point(0, 286);
+            this.panelBotonGrados.Location = new System.Drawing.Point(0, 214);
             this.panelBotonGrados.Name = "panelBotonGrados";
             this.panelBotonGrados.Size = new System.Drawing.Size(225, 37);
             this.panelBotonGrados.TabIndex = 6;
@@ -588,11 +573,10 @@
             // panelMenuAlimentosDesplegable
             // 
             this.panelMenuAlimentosDesplegable.Controls.Add(this.panel16);
-            this.panelMenuAlimentosDesplegable.Controls.Add(this.panel13);
             this.panelMenuAlimentosDesplegable.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelMenuAlimentosDesplegable.Location = new System.Drawing.Point(0, 211);
+            this.panelMenuAlimentosDesplegable.Location = new System.Drawing.Point(0, 174);
             this.panelMenuAlimentosDesplegable.Name = "panelMenuAlimentosDesplegable";
-            this.panelMenuAlimentosDesplegable.Size = new System.Drawing.Size(225, 75);
+            this.panelMenuAlimentosDesplegable.Size = new System.Drawing.Size(225, 40);
             this.panelMenuAlimentosDesplegable.TabIndex = 8;
             // 
             // panel16
@@ -602,10 +586,10 @@
             this.panel16.Controls.Add(this.panel17);
             this.panel16.Controls.Add(this.inventarioLight);
             this.panel16.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel16.Location = new System.Drawing.Point(0, 37);
+            this.panel16.Location = new System.Drawing.Point(0, 0);
             this.panel16.Name = "panel16";
             this.panel16.Size = new System.Drawing.Size(225, 37);
-            this.panel16.TabIndex = 7;
+            this.panel16.TabIndex = 5;
             // 
             // button11
             // 
@@ -656,67 +640,6 @@
             this.inventarioLight.Size = new System.Drawing.Size(5, 37);
             this.inventarioLight.TabIndex = 0;
             // 
-            // panel13
-            // 
-            this.panel13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(45)))), ((int)(((byte)(50)))));
-            this.panel13.Controls.Add(this.btnInforme);
-            this.panel13.Controls.Add(this.panel14);
-            this.panel13.Controls.Add(this.movimientoLight);
-            this.panel13.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel13.Location = new System.Drawing.Point(0, 0);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(225, 37);
-            this.panel13.TabIndex = 6;
-            // 
-            // btnInforme
-            // 
-            this.btnInforme.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnInforme.FlatAppearance.BorderSize = 0;
-            this.btnInforme.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnInforme.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInforme.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(199)))), ((int)(((byte)(196)))));
-            this.btnInforme.Location = new System.Drawing.Point(37, 0);
-            this.btnInforme.Name = "btnInforme";
-            this.btnInforme.Size = new System.Drawing.Size(188, 37);
-            this.btnInforme.TabIndex = 0;
-            this.btnInforme.Text = "Movimiento";
-            this.btnInforme.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnInforme.UseVisualStyleBackColor = true;
-            this.btnInforme.Click += new System.EventHandler(this.button7_Click);
-            // 
-            // panel14
-            // 
-            this.panel14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(45)))), ((int)(((byte)(50)))));
-            this.panel14.Controls.Add(this.button10);
-            this.panel14.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel14.Location = new System.Drawing.Point(5, 0);
-            this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(32, 37);
-            this.panel14.TabIndex = 1;
-            // 
-            // button10
-            // 
-            this.button10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button10.FlatAppearance.BorderSize = 0;
-            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button10.Font = new System.Drawing.Font("Font Awesome 5 Free Solid", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(199)))), ((int)(((byte)(196)))));
-            this.button10.Location = new System.Drawing.Point(0, 0);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(32, 37);
-            this.button10.TabIndex = 1;
-            this.button10.Text = "";
-            this.button10.UseVisualStyleBackColor = true;
-            // 
-            // movimientoLight
-            // 
-            this.movimientoLight.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(45)))), ((int)(((byte)(50)))));
-            this.movimientoLight.Dock = System.Windows.Forms.DockStyle.Left;
-            this.movimientoLight.Location = new System.Drawing.Point(0, 0);
-            this.movimientoLight.Name = "movimientoLight";
-            this.movimientoLight.Size = new System.Drawing.Size(5, 37);
-            this.movimientoLight.TabIndex = 0;
-            // 
             // panelBotonAlimentos
             // 
             this.panelBotonAlimentos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(45)))), ((int)(((byte)(50)))));
@@ -724,7 +647,7 @@
             this.panelBotonAlimentos.Controls.Add(this.panel8);
             this.panelBotonAlimentos.Controls.Add(this.alimentosLight);
             this.panelBotonAlimentos.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelBotonAlimentos.Location = new System.Drawing.Point(0, 174);
+            this.panelBotonAlimentos.Location = new System.Drawing.Point(0, 137);
             this.panelBotonAlimentos.Name = "panelBotonAlimentos";
             this.panelBotonAlimentos.Size = new System.Drawing.Size(225, 37);
             this.panelBotonAlimentos.TabIndex = 5;
@@ -780,68 +703,6 @@
             this.alimentosLight.Name = "alimentosLight";
             this.alimentosLight.Size = new System.Drawing.Size(5, 37);
             this.alimentosLight.TabIndex = 0;
-            // 
-            // PanelBotonInicio
-            // 
-            this.PanelBotonInicio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(45)))), ((int)(((byte)(50)))));
-            this.PanelBotonInicio.Controls.Add(this.button1);
-            this.PanelBotonInicio.Controls.Add(this.panel7);
-            this.PanelBotonInicio.Controls.Add(this.inicioLight);
-            this.PanelBotonInicio.Dock = System.Windows.Forms.DockStyle.Top;
-            this.PanelBotonInicio.Location = new System.Drawing.Point(0, 137);
-            this.PanelBotonInicio.Name = "PanelBotonInicio";
-            this.PanelBotonInicio.Size = new System.Drawing.Size(225, 37);
-            this.PanelBotonInicio.TabIndex = 4;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(34)))), ((int)(((byte)(38)))));
-            this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(199)))), ((int)(((byte)(196)))));
-            this.button1.Location = new System.Drawing.Point(37, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(188, 37);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Inicio";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(45)))), ((int)(((byte)(50)))));
-            this.panel7.Controls.Add(this.button2);
-            this.panel7.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel7.Location = new System.Drawing.Point(5, 0);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(32, 37);
-            this.panel7.TabIndex = 1;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(34)))), ((int)(((byte)(38)))));
-            this.button2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Font Awesome 5 Free Solid", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(199)))), ((int)(((byte)(196)))));
-            this.button2.Location = new System.Drawing.Point(0, 0);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(32, 37);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "";
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // inicioLight
-            // 
-            this.inicioLight.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(45)))), ((int)(((byte)(50)))));
-            this.inicioLight.Dock = System.Windows.Forms.DockStyle.Left;
-            this.inicioLight.Location = new System.Drawing.Point(0, 0);
-            this.inicioLight.Name = "inicioLight";
-            this.inicioLight.Size = new System.Drawing.Size(5, 37);
-            this.inicioLight.TabIndex = 0;
             // 
             // panel4
             // 
@@ -1054,12 +915,8 @@
             this.panelMenuAlimentosDesplegable.ResumeLayout(false);
             this.panel16.ResumeLayout(false);
             this.panel17.ResumeLayout(false);
-            this.panel13.ResumeLayout(false);
-            this.panel14.ResumeLayout(false);
             this.panelBotonAlimentos.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
-            this.PanelBotonInicio.ResumeLayout(false);
-            this.panel7.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.panel3.ResumeLayout(false);
@@ -1091,14 +948,9 @@
         private System.Windows.Forms.PictureBox btnMaximizar;
         private System.Windows.Forms.PictureBox btnCerrar;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Panel PanelBotonInicio;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Panel inicioLight;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panelBotonGrados;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Panel panel10;
@@ -1140,11 +992,6 @@
         private System.Windows.Forms.Panel panel17;
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.Panel inventarioLight;
-        private System.Windows.Forms.Panel panel13;
-        private System.Windows.Forms.Button btnInforme;
-        private System.Windows.Forms.Panel panel14;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Panel movimientoLight;
         private System.Windows.Forms.Panel panel24;
         private System.Windows.Forms.Button btnGestion;
         private System.Windows.Forms.Panel panel25;

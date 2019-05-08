@@ -340,5 +340,10 @@ namespace Sistema_de_Alimentos
         {
 
         }
+
+        private void lblModificandoA_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
