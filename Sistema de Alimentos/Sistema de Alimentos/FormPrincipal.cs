@@ -22,6 +22,7 @@ namespace Sistema_de_Alimentos
         public static string usuarioSesion;//pueden usar esta variable para saber el id del usuario que se ha logeado, no le asignen valores por que se le asigna desde el login
         public static string nombreSesion;
         public static string rolSesionNombre;
+        storedProcedure sp = new storedProcedure();
 
         public menuPrincipal()
         {
@@ -168,6 +169,43 @@ namespace Sistema_de_Alimentos
             cargarVariables();
             lbNombreUsuario.Text = nombreSesion;
             lblCargo.Text = rolSesionNombre;
+            actualizarNotificacion();
+        }
+
+        private void actualizarNotificacion() {
+
+            DateTime caducidad = new DateTime();
+            int resta = 0;
+            DateTime limite = DateTime.Today.AddDays(15);
+            DateTime ahora = DateTime.Today;
+            string mensage = "";
+            cboNotificaciones.Items.Clear();
+            lblCantNotificaciones.Visible = false;
+            int CantNotificaciones = 0;
+            lblTituloNotificaciones.Text = "Sin notificaciones";
+            List<object[]> datos = sp.list("inventarioAlimentos");
+            foreach (object[] grado in datos)
+                {
+                caducidad = Convert.ToDateTime(grado[5]);
+                resta = Convert.ToInt32((caducidad - ahora).TotalDays);
+                if (caducidad <= limite) {
+                    CantNotificaciones++;
+                    mensage = grado[3].ToString() + grado[2].ToString()+" de " + grado[1].ToString() + " venceran en: " + resta.ToString() + " días";
+                    cboNotificaciones.Items.Add(mensage);
+                }
+            }
+
+            if (CantNotificaciones > 0) {
+                lblCantNotificaciones.Visible = true;
+                lblCantNotificaciones.Text = CantNotificaciones.ToString();
+                lblTituloNotificaciones.Text = "Tiene " + CantNotificaciones.ToString() + "notificaciones";
+            } if (CantNotificaciones == 1)
+            {
+                lblCantNotificaciones.Visible = true;
+                lblCantNotificaciones.Text = CantNotificaciones.ToString();
+                lblTituloNotificaciones.Text = "Tiene " + CantNotificaciones.ToString() + "notificacion";
+            }
+
         }
 
         private void menuToggle()
@@ -272,6 +310,26 @@ namespace Sistema_de_Alimentos
             button7_Click(sender, e);
         }
 
+        private void panelMenuAlimentosDesplegable_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panelMenu_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void lblTituloNotificaciones_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            actualizarNotificacion();
+        }
+
         //carga variables locales
         public static void cargarVariables()
         {
@@ -305,11 +363,7 @@ namespace Sistema_de_Alimentos
             }
             if (Application.OpenForms["frmInventarioAlimentos"] == null)
             {
-                gestionLight.BackColor = Color.FromArgb(34, 45, 50);
-            }
-            if (Application.OpenForms["frmMovimientoAlimentos"] == null)
-            {
-                gestionLight.BackColor = Color.FromArgb(34, 45, 50);
+                inventarioLight.BackColor = Color.FromArgb(34, 45, 50);
             }
         }
     }

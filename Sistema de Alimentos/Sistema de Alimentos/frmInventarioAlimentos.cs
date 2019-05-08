@@ -280,7 +280,7 @@ namespace Sistema_de_Alimentos
             }
         }
 
-        private void crearMovimiento()
+/*private void crearMovimiento()
         {
             errorProvider1.Clear();
             if (validar())
@@ -344,7 +344,6 @@ namespace Sistema_de_Alimentos
                         {
                             if (busqueda2 > 0)
                             {
-                                /*actualizar lista de asistencia*/
 
 
                                 MessageBox.Show("Inventario actualizado con exito", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -366,7 +365,7 @@ namespace Sistema_de_Alimentos
                     }
                 }
             }
-        }
+        }*/
         private void actualizarDatosInventario()
         {
             if (dgvInventario.Text == "")
@@ -391,7 +390,7 @@ namespace Sistema_de_Alimentos
             dgvInventario.Refresh();
         }
 
-        private void actualizarDatosMovimiento()
+       /* private void actualizarDatosMovimiento()
         {
             if (dgvInventario.Text == "" || dgvInventario.Text == " ")
             {
@@ -409,7 +408,7 @@ namespace Sistema_de_Alimentos
             }
             dgvInventario.Refresh();
         }
-
+*/
         private void button4_Click(object sender, EventArgs e)
         {
 

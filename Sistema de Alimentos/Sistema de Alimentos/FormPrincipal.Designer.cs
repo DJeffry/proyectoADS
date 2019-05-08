@@ -33,14 +33,13 @@
             this.panelMensajes = new System.Windows.Forms.Panel();
             this.panel12 = new System.Windows.Forms.Panel();
             this.button9 = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cboNotificaciones = new System.Windows.Forms.ComboBox();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lblTituloNotificaciones = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.toggler = new System.Windows.Forms.PictureBox();
-            this.label4 = new System.Windows.Forms.Label();
+            this.lblCantNotificaciones = new System.Windows.Forms.Label();
             this.btnMessages = new System.Windows.Forms.Button();
-            this.botonSettings = new System.Windows.Forms.Button();
             this.panelMenu = new System.Windows.Forms.Panel();
             this.panelGradosDesplegable = new System.Windows.Forms.Panel();
             this.panel24 = new System.Windows.Forms.Panel();
@@ -53,11 +52,6 @@
             this.panel23 = new System.Windows.Forms.Panel();
             this.button16 = new System.Windows.Forms.Button();
             this.estudiantesLight = new System.Windows.Forms.Panel();
-            this.panel19 = new System.Windows.Forms.Panel();
-            this.btnEncargados = new System.Windows.Forms.Button();
-            this.panel20 = new System.Windows.Forms.Panel();
-            this.button14 = new System.Windows.Forms.Button();
-            this.panel21 = new System.Windows.Forms.Panel();
             this.panelBotonGrados = new System.Windows.Forms.Panel();
             this.button5 = new System.Windows.Forms.Button();
             this.panel10 = new System.Windows.Forms.Panel();
@@ -102,8 +96,6 @@
             this.panel25.SuspendLayout();
             this.panel22.SuspendLayout();
             this.panel23.SuspendLayout();
-            this.panel19.SuspendLayout();
-            this.panel20.SuspendLayout();
             this.panelBotonGrados.SuspendLayout();
             this.panel10.SuspendLayout();
             this.panelMenuAlimentosDesplegable.SuspendLayout();
@@ -145,19 +137,20 @@
             this.panelFormularios.Location = new System.Drawing.Point(225, 69);
             this.panelFormularios.Name = "panelFormularios";
             this.panelFormularios.Size = new System.Drawing.Size(715, 479);
-            this.panelFormularios.TabIndex = 2;
+            this.panelFormularios.TabIndex = 1;
             // 
             // panelMensajes
             // 
-            this.panelMensajes.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panelMensajes.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelMensajes.Controls.Add(this.panel12);
-            this.panelMensajes.Controls.Add(this.comboBox1);
+            this.panelMensajes.Controls.Add(this.cboNotificaciones);
             this.panelMensajes.Controls.Add(this.panel5);
-            this.panelMensajes.Location = new System.Drawing.Point(475, 3);
+            this.panelMensajes.Controls.Add(this.panel12);
+            this.panelMensajes.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panelMensajes.Location = new System.Drawing.Point(399, 0);
             this.panelMensajes.Name = "panelMensajes";
-            this.panelMensajes.Size = new System.Drawing.Size(200, 261);
-            this.panelMensajes.TabIndex = 0;
+            this.panelMensajes.Size = new System.Drawing.Size(316, 479);
+            this.panelMensajes.TabIndex = 10;
+            this.panelMensajes.TabStop = true;
             this.panelMensajes.Visible = false;
             // 
             // panel12
@@ -165,73 +158,74 @@
             this.panel12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel12.Controls.Add(this.button9);
             this.panel12.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel12.Location = new System.Drawing.Point(0, 234);
+            this.panel12.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel12.Location = new System.Drawing.Point(0, 432);
             this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(198, 25);
+            this.panel12.Size = new System.Drawing.Size(314, 45);
             this.panel12.TabIndex = 2;
             // 
             // button9
             // 
+            this.button9.AutoSize = true;
             this.button9.BackColor = System.Drawing.Color.White;
             this.button9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button9.FlatAppearance.BorderSize = 0;
             this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
+            this.button9.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.button9.Location = new System.Drawing.Point(0, 0);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(196, 23);
+            this.button9.Size = new System.Drawing.Size(312, 43);
             this.button9.TabIndex = 0;
-            this.button9.Text = "Limpiar";
+            this.button9.Text = "Actualizar";
             this.button9.UseVisualStyleBackColor = false;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
-            // comboBox1
+            // cboNotificaciones
             // 
-            this.comboBox1.BackColor = System.Drawing.Color.White;
-            this.comboBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.Simple;
-            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
-            this.comboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(45)))), ((int)(((byte)(50)))));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Leche a punto de vencer"});
-            this.comboBox1.Location = new System.Drawing.Point(0, 20);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(198, 239);
-            this.comboBox1.TabIndex = 1;
-            this.comboBox1.Text = "buscar";
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.cboNotificaciones.BackColor = System.Drawing.Color.White;
+            this.cboNotificaciones.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cboNotificaciones.DropDownStyle = System.Windows.Forms.ComboBoxStyle.Simple;
+            this.cboNotificaciones.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cboNotificaciones.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
+            this.cboNotificaciones.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(45)))), ((int)(((byte)(50)))));
+            this.cboNotificaciones.FormattingEnabled = true;
+            this.cboNotificaciones.Location = new System.Drawing.Point(0, 20);
+            this.cboNotificaciones.Name = "cboNotificaciones";
+            this.cboNotificaciones.Size = new System.Drawing.Size(314, 412);
+            this.cboNotificaciones.TabIndex = 1;
+            this.cboNotificaciones.Text = "buscar";
+            this.cboNotificaciones.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(141)))), ((int)(((byte)(188)))));
-            this.panel5.Controls.Add(this.label5);
+            this.panel5.Controls.Add(this.lblTituloNotificaciones);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(141)))), ((int)(((byte)(188)))));
             this.panel5.Location = new System.Drawing.Point(0, 0);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(198, 20);
+            this.panel5.Size = new System.Drawing.Size(314, 20);
             this.panel5.TabIndex = 0;
             // 
-            // label5
+            // lblTituloNotificaciones
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(1, 1);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(107, 17);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "Tienes 1 mensaje";
+            this.lblTituloNotificaciones.AutoSize = true;
+            this.lblTituloNotificaciones.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTituloNotificaciones.ForeColor = System.Drawing.Color.White;
+            this.lblTituloNotificaciones.Location = new System.Drawing.Point(1, 1);
+            this.lblTituloNotificaciones.Name = "lblTituloNotificaciones";
+            this.lblTituloNotificaciones.Size = new System.Drawing.Size(107, 17);
+            this.lblTituloNotificaciones.TabIndex = 0;
+            this.lblTituloNotificaciones.Text = "Tienes 1 mensaje";
+            this.lblTituloNotificaciones.Click += new System.EventHandler(this.lblTituloNotificaciones_Click);
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(141)))), ((int)(((byte)(188)))));
             this.panel1.Controls.Add(this.toggler);
-            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.lblCantNotificaciones);
             this.panel1.Controls.Add(this.btnMessages);
-            this.panel1.Controls.Add(this.botonSettings);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(225, 22);
             this.panel1.Name = "panel1";
@@ -250,18 +244,18 @@
             this.toggler.TabStop = false;
             this.toggler.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // label4
+            // lblCantNotificaciones
             // 
-            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Gold;
-            this.label4.Location = new System.Drawing.Point(634, 30);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(14, 15);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "1";
-            this.label4.Visible = false;
+            this.lblCantNotificaciones.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblCantNotificaciones.AutoSize = true;
+            this.lblCantNotificaciones.Font = new System.Drawing.Font("Century", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCantNotificaciones.ForeColor = System.Drawing.Color.Gold;
+            this.lblCantNotificaciones.Location = new System.Drawing.Point(676, 29);
+            this.lblCantNotificaciones.Name = "lblCantNotificaciones";
+            this.lblCantNotificaciones.Size = new System.Drawing.Size(14, 15);
+            this.lblCantNotificaciones.TabIndex = 1;
+            this.lblCantNotificaciones.Text = "1";
+            this.lblCantNotificaciones.Visible = false;
             // 
             // btnMessages
             // 
@@ -271,29 +265,13 @@
             this.btnMessages.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMessages.Font = new System.Drawing.Font("Font Awesome 5 Free Solid", 12F, System.Drawing.FontStyle.Bold);
             this.btnMessages.ForeColor = System.Drawing.Color.White;
-            this.btnMessages.Location = new System.Drawing.Point(633, 0);
+            this.btnMessages.Location = new System.Drawing.Point(674, 0);
             this.btnMessages.Name = "btnMessages";
             this.btnMessages.Size = new System.Drawing.Size(41, 47);
             this.btnMessages.TabIndex = 0;
             this.btnMessages.Text = "";
             this.btnMessages.UseVisualStyleBackColor = true;
-            this.btnMessages.Visible = false;
             this.btnMessages.Click += new System.EventHandler(this.btnMessages_Click);
-            // 
-            // botonSettings
-            // 
-            this.botonSettings.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.botonSettings.Dock = System.Windows.Forms.DockStyle.Right;
-            this.botonSettings.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(141)))), ((int)(((byte)(188)))));
-            this.botonSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.botonSettings.Font = new System.Drawing.Font("Font Awesome 5 Free Solid", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.botonSettings.ForeColor = System.Drawing.Color.White;
-            this.botonSettings.Location = new System.Drawing.Point(674, 0);
-            this.botonSettings.Name = "botonSettings";
-            this.botonSettings.Size = new System.Drawing.Size(41, 47);
-            this.botonSettings.TabIndex = 1;
-            this.botonSettings.Text = "";
-            this.botonSettings.UseVisualStyleBackColor = true;
             // 
             // panelMenu
             // 
@@ -310,16 +288,16 @@
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Size = new System.Drawing.Size(225, 526);
             this.panelMenu.TabIndex = 1;
+            this.panelMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMenu_Paint);
             // 
             // panelGradosDesplegable
             // 
             this.panelGradosDesplegable.Controls.Add(this.panel24);
             this.panelGradosDesplegable.Controls.Add(this.panel22);
-            this.panelGradosDesplegable.Controls.Add(this.panel19);
             this.panelGradosDesplegable.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelGradosDesplegable.Location = new System.Drawing.Point(0, 251);
+            this.panelGradosDesplegable.Location = new System.Drawing.Point(0, 211);
             this.panelGradosDesplegable.Name = "panelGradosDesplegable";
-            this.panelGradosDesplegable.Size = new System.Drawing.Size(225, 115);
+            this.panelGradosDesplegable.Size = new System.Drawing.Size(225, 0);
             this.panelGradosDesplegable.TabIndex = 10;
             // 
             // panel24
@@ -329,7 +307,7 @@
             this.panel24.Controls.Add(this.panel25);
             this.panel24.Controls.Add(this.gestionLight);
             this.panel24.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel24.Location = new System.Drawing.Point(0, 74);
+            this.panel24.Location = new System.Drawing.Point(0, 37);
             this.panel24.Name = "panel24";
             this.panel24.Size = new System.Drawing.Size(225, 37);
             this.panel24.TabIndex = 8;
@@ -391,7 +369,7 @@
             this.panel22.Controls.Add(this.panel23);
             this.panel22.Controls.Add(this.estudiantesLight);
             this.panel22.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel22.Location = new System.Drawing.Point(0, 37);
+            this.panel22.Location = new System.Drawing.Point(0, 0);
             this.panel22.Name = "panel22";
             this.panel22.Size = new System.Drawing.Size(225, 37);
             this.panel22.TabIndex = 7;
@@ -446,67 +424,6 @@
             this.estudiantesLight.Size = new System.Drawing.Size(5, 37);
             this.estudiantesLight.TabIndex = 0;
             // 
-            // panel19
-            // 
-            this.panel19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(45)))), ((int)(((byte)(50)))));
-            this.panel19.Controls.Add(this.btnEncargados);
-            this.panel19.Controls.Add(this.panel20);
-            this.panel19.Controls.Add(this.panel21);
-            this.panel19.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel19.Location = new System.Drawing.Point(0, 0);
-            this.panel19.Name = "panel19";
-            this.panel19.Size = new System.Drawing.Size(225, 37);
-            this.panel19.TabIndex = 6;
-            // 
-            // btnEncargados
-            // 
-            this.btnEncargados.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnEncargados.FlatAppearance.BorderSize = 0;
-            this.btnEncargados.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEncargados.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEncargados.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(199)))), ((int)(((byte)(196)))));
-            this.btnEncargados.Location = new System.Drawing.Point(37, 0);
-            this.btnEncargados.Name = "btnEncargados";
-            this.btnEncargados.Size = new System.Drawing.Size(188, 37);
-            this.btnEncargados.TabIndex = 0;
-            this.btnEncargados.Text = "Encargados";
-            this.btnEncargados.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEncargados.UseVisualStyleBackColor = true;
-            this.btnEncargados.Click += new System.EventHandler(this.btnEncargados_Click);
-            // 
-            // panel20
-            // 
-            this.panel20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(45)))), ((int)(((byte)(50)))));
-            this.panel20.Controls.Add(this.button14);
-            this.panel20.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel20.Location = new System.Drawing.Point(5, 0);
-            this.panel20.Name = "panel20";
-            this.panel20.Size = new System.Drawing.Size(32, 37);
-            this.panel20.TabIndex = 1;
-            // 
-            // button14
-            // 
-            this.button14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button14.FlatAppearance.BorderSize = 0;
-            this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button14.Font = new System.Drawing.Font("Font Awesome 5 Free Solid", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(199)))), ((int)(((byte)(196)))));
-            this.button14.Location = new System.Drawing.Point(0, 0);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(32, 37);
-            this.button14.TabIndex = 1;
-            this.button14.Text = "";
-            this.button14.UseVisualStyleBackColor = true;
-            // 
-            // panel21
-            // 
-            this.panel21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(45)))), ((int)(((byte)(50)))));
-            this.panel21.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel21.Location = new System.Drawing.Point(0, 0);
-            this.panel21.Name = "panel21";
-            this.panel21.Size = new System.Drawing.Size(5, 37);
-            this.panel21.TabIndex = 0;
-            // 
             // panelBotonGrados
             // 
             this.panelBotonGrados.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(45)))), ((int)(((byte)(50)))));
@@ -514,7 +431,7 @@
             this.panelBotonGrados.Controls.Add(this.panel10);
             this.panelBotonGrados.Controls.Add(this.gradosLight);
             this.panelBotonGrados.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelBotonGrados.Location = new System.Drawing.Point(0, 214);
+            this.panelBotonGrados.Location = new System.Drawing.Point(0, 174);
             this.panelBotonGrados.Name = "panelBotonGrados";
             this.panelBotonGrados.Size = new System.Drawing.Size(225, 37);
             this.panelBotonGrados.TabIndex = 6;
@@ -576,8 +493,9 @@
             this.panelMenuAlimentosDesplegable.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelMenuAlimentosDesplegable.Location = new System.Drawing.Point(0, 174);
             this.panelMenuAlimentosDesplegable.Name = "panelMenuAlimentosDesplegable";
-            this.panelMenuAlimentosDesplegable.Size = new System.Drawing.Size(225, 40);
+            this.panelMenuAlimentosDesplegable.Size = new System.Drawing.Size(225, 0);
             this.panelMenuAlimentosDesplegable.TabIndex = 8;
+            this.panelMenuAlimentosDesplegable.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMenuAlimentosDesplegable_Paint);
             // 
             // panel16
             // 
@@ -897,6 +815,7 @@
             this.panelFormularios.ResumeLayout(false);
             this.panelMensajes.ResumeLayout(false);
             this.panel12.ResumeLayout(false);
+            this.panel12.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             this.panel1.ResumeLayout(false);
@@ -908,8 +827,6 @@
             this.panel25.ResumeLayout(false);
             this.panel22.ResumeLayout(false);
             this.panel23.ResumeLayout(false);
-            this.panel19.ResumeLayout(false);
-            this.panel20.ResumeLayout(false);
             this.panelBotonGrados.ResumeLayout(false);
             this.panel10.ResumeLayout(false);
             this.panelMenuAlimentosDesplegable.ResumeLayout(false);
@@ -966,11 +883,10 @@
         private System.Windows.Forms.Label lbNombreUsuario;
         private System.Windows.Forms.Panel panelMensajes;
         private System.Windows.Forms.Button btnMessages;
-        private System.Windows.Forms.Button botonSettings;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblCantNotificaciones;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label lblTituloNotificaciones;
+        private System.Windows.Forms.ComboBox cboNotificaciones;
         private System.Windows.Forms.Panel panel12;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.PictureBox toggler;
@@ -981,11 +897,6 @@
         private System.Windows.Forms.Panel panel23;
         private System.Windows.Forms.Button button16;
         private System.Windows.Forms.Panel estudiantesLight;
-        private System.Windows.Forms.Panel panel19;
-        private System.Windows.Forms.Button btnEncargados;
-        private System.Windows.Forms.Panel panel20;
-        private System.Windows.Forms.Button button14;
-        private System.Windows.Forms.Panel panel21;
         private System.Windows.Forms.Panel panelMenuAlimentosDesplegable;
         private System.Windows.Forms.Panel panel16;
         private System.Windows.Forms.Button button11;
